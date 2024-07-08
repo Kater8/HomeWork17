@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="167" id="hde-0G-vCb" customClass="ThirdSectionCell" customModule="HomeWork17" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="123"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hde-0G-vCb" id="15H-ci-p75">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.artframe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Y3J-mj-MSv">
+                        <rect key="frame" x="24" y="47" width="46" height="28.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="Z9t-uo-IWJ"/>
+                            <constraint firstAttribute="height" constant="31" id="bU4-UC-c5T"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cn-mL-1NL">
+                        <rect key="frame" x="126" y="8" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beH-AC-LwJ">
+                        <rect key="frame" x="126" y="36.5" width="86" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drf-EC-xIO">
+                        <rect key="frame" x="357" y="46" width="49" height="31"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="gray" title="Buy"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Y3J-mj-MSv" firstAttribute="centerY" secondItem="15H-ci-p75" secondAttribute="centerY" id="GJT-dY-35F"/>
+                    <constraint firstAttribute="trailing" secondItem="drf-EC-xIO" secondAttribute="trailing" constant="8" id="Rfu-md-xNX"/>
+                    <constraint firstItem="beH-AC-LwJ" firstAttribute="top" secondItem="6Cn-mL-1NL" secondAttribute="bottom" constant="8" id="SlZ-lw-BIc"/>
+                    <constraint firstItem="drf-EC-xIO" firstAttribute="centerY" secondItem="15H-ci-p75" secondAttribute="centerY" id="W8X-4L-o7f"/>
+                    <constraint firstItem="Y3J-mj-MSv" firstAttribute="leading" secondItem="15H-ci-p75" secondAttribute="leading" constant="24" id="X1F-CG-EB2"/>
+                    <constraint firstItem="drf-EC-xIO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Cn-mL-1NL" secondAttribute="trailing" constant="16" id="a9F-Ix-Gpq"/>
+                    <constraint firstItem="beH-AC-LwJ" firstAttribute="leading" secondItem="Y3J-mj-MSv" secondAttribute="trailing" constant="56" id="i2L-os-0Ef"/>
+                    <constraint firstItem="drf-EC-xIO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="beH-AC-LwJ" secondAttribute="trailing" constant="16" id="mm4-dc-OUy"/>
+                    <constraint firstItem="6Cn-mL-1NL" firstAttribute="top" secondItem="15H-ci-p75" secondAttribute="top" constant="8" id="pwe-5I-PcY"/>
+                    <constraint firstItem="6Cn-mL-1NL" firstAttribute="leading" secondItem="Y3J-mj-MSv" secondAttribute="trailing" constant="56" id="v7D-pp-lSP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="Photo" destination="Y3J-mj-MSv" id="Jlo-wH-rc2"/>
+                <outlet property="buy" destination="drf-EC-xIO" id="3Qd-Rj-DDt"/>
+                <outlet property="descriptionLabel" destination="beH-AC-LwJ" id="xPy-fR-BSt"/>
+                <outlet property="photo" destination="Y3J-mj-MSv" id="acX-in-zTF"/>
+                <outlet property="titleLabel1" destination="6Cn-mL-1NL" id="lXq-Qw-QfZ"/>
+            </connections>
+            <point key="canvasLocation" x="-188.40579710144928" y="231.36160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="photo.artframe" catalog="system" width="128" height="93"/>
+    </resources>
+</document>
