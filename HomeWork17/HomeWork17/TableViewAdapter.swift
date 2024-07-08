@@ -2,17 +2,18 @@
 //  TableViewAdapter.swift
 //  Lesson17
 //
-//  Created by user on 15.04.2024.
+// 
 //
 
 import UIKit
 
 class TableViewAdapter: NSObject {
     
-    var sections: [SectionAdapterInput] = []
+    var sections: [SectionAdapterInput] = [FirstSectionAdapter(), SecondSectionAdapter(), ThirdSectionAdapter()]
 }
 
 // MARK: - TableViewAdapterInput
+
 extension TableViewAdapter: TableViewAdapterInput {
     
     func setup(with tableView: UITableView) {
@@ -30,6 +31,10 @@ extension TableViewAdapter: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[section].titleForHeader()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,4 +56,5 @@ extension TableViewAdapter: UITableViewDelegate {
         sections[indexPath.section].didSelectRow(at: indexPath, in: tableView)
     }
 }
+    
 

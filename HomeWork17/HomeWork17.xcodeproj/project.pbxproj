@@ -18,6 +18,10 @@
 		0A69DC852C2ACF320069DA45 /* SectionAdapterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69DC842C2ACF320069DA45 /* SectionAdapterInput.swift */; };
 		0A69DC872C2ACF640069DA45 /* TableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69DC862C2ACF640069DA45 /* TableViewAdapter.swift */; };
 		0A69DC892C2ACF850069DA45 /* TableViewAdapterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69DC882C2ACF850069DA45 /* TableViewAdapterInput.swift */; };
+		0A69DC8B2C2AE0F20069DA45 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69DC8A2C2AE0F20069DA45 /* SectionCell.swift */; };
+		0A69DC8E2C387B2E0069DA45 /* FirstSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A69DC8D2C387B2E0069DA45 /* FirstSectionCell.xib */; };
+		0A69DC902C387E750069DA45 /* SecondSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A69DC8F2C387E750069DA45 /* SecondSectionCell.xib */; };
+		0A69DC922C387EA10069DA45 /* ThirdSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A69DC912C387EA10069DA45 /* ThirdSectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		0A69DC842C2ACF320069DA45 /* SectionAdapterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionAdapterInput.swift; sourceTree = "<group>"; };
 		0A69DC862C2ACF640069DA45 /* TableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAdapter.swift; sourceTree = "<group>"; };
 		0A69DC882C2ACF850069DA45 /* TableViewAdapterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAdapterInput.swift; sourceTree = "<group>"; };
+		0A69DC8A2C2AE0F20069DA45 /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
+		0A69DC8D2C387B2E0069DA45 /* FirstSectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstSectionCell.xib; sourceTree = "<group>"; };
+		0A69DC8F2C387E750069DA45 /* SecondSectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondSectionCell.xib; sourceTree = "<group>"; };
+		0A69DC912C387EA10069DA45 /* ThirdSectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdSectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,7 @@
 				0A69DC6B2C2ACCAB0069DA45 /* AppDelegate.swift */,
 				0A69DC6D2C2ACCAB0069DA45 /* SceneDelegate.swift */,
 				0A69DC6F2C2ACCAB0069DA45 /* ViewController.swift */,
+				0A69DC8C2C387AF40069DA45 /* Cells */,
 				0A69DC812C2ACED90069DA45 /* Section  */,
 				0A69DC7F2C2ACE840069DA45 /* CellAdapterInput.swift */,
 				0A69DC862C2ACF640069DA45 /* TableViewAdapter.swift */,
@@ -88,6 +97,17 @@
 				0A69DC842C2ACF320069DA45 /* SectionAdapterInput.swift */,
 			);
 			path = "Section ";
+			sourceTree = "<group>";
+		};
+		0A69DC8C2C387AF40069DA45 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0A69DC8A2C2AE0F20069DA45 /* SectionCell.swift */,
+				0A69DC8D2C387B2E0069DA45 /* FirstSectionCell.xib */,
+				0A69DC8F2C387E750069DA45 /* SecondSectionCell.xib */,
+				0A69DC912C387EA10069DA45 /* ThirdSectionCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A69DC782C2ACCAD0069DA45 /* LaunchScreen.storyboard in Resources */,
+				0A69DC922C387EA10069DA45 /* ThirdSectionCell.xib in Resources */,
 				0A69DC752C2ACCAD0069DA45 /* Assets.xcassets in Resources */,
+				0A69DC8E2C387B2E0069DA45 /* FirstSectionCell.xib in Resources */,
 				0A69DC732C2ACCAB0069DA45 /* Main.storyboard in Resources */,
+				0A69DC902C387E750069DA45 /* SecondSectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A69DC8B2C2AE0F20069DA45 /* SectionCell.swift in Sources */,
 				0A69DC832C2ACF0D0069DA45 /* CellsSetSectionAdapter.swift in Sources */,
 				0A69DC702C2ACCAB0069DA45 /* ViewController.swift in Sources */,
 				0A69DC892C2ACF850069DA45 /* TableViewAdapterInput.swift in Sources */,

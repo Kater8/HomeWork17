@@ -2,7 +2,7 @@
 //  CellsSetSectionAdapter.swift
 //  Lesson17
 //
-//  Created by user on 15.04.2024.
+// 
 //
 
 import UIKit
@@ -14,6 +14,7 @@ class CellsSetSectionAdapter {
 
 // MARK: - SectionAdapterInput
 extension CellsSetSectionAdapter: SectionAdapterInput {
+    
 
     func registerCells(in tableView: UITableView) {
         cellAdapters.forEach { $0.registerCell(in: tableView) }
@@ -33,6 +34,39 @@ extension CellsSetSectionAdapter: SectionAdapterInput {
     
     func didSelectRow(at indexPath: IndexPath, in tableView: UITableView) {
         return cellAdapters[indexPath.row].didSelectRow(at: indexPath, in: tableView)
+    }
+}
+
+// класи адаптерів для кожної секції
+ 
+class Section1Adapter: CellsSetSectionAdapter {
+    override init() {
+        super.init()
+//        додаємо адаптер
+        cellAdapters = [
+            FirstSectionCellAdapter(title: "Title 1"),
+            FirstSectionCellAdapter(title: "Title 2")
+        ]
+    }
+}
+
+class Section2Adapter: CellsSetSectionAdapter {
+    override init() {
+        super.init()
+        cellAdapters = [
+            SecondSectionCellAdapter(title: "Secttings 1"),
+            SecondSectionCellAdapter(title: "Secttings 2")
+        ]
+    }
+}
+
+class Section3Adapter: CellsSetSectionAdapter {
+    override init() {
+        super.init()
+        cellAdapters = [
+            ThirdSectionCellAdapter(title: "Title3.1"),
+            ThirdSectionCellAdapter(title: "Title3.2")
+        ]
     }
 }
 
